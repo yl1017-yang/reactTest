@@ -42,3 +42,25 @@ We suggest that you begin by typing:
 
   cd frontend
   npm start
+
+  ------------------------------
+  git 허브 배포
+
+  https://velog.io/@byjihye/react-github-pages
+
+  1. npm install -save gh-pages
+  2. package.json 파일
+  "homepage": "https://yl1017-yang.github.io/reactTest/"
+
+  하단추가
+  "scripts": {
+  //...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+3. npm run deploy
+
+4. github --> settings -> options
+
+깃허브 Pages 탭으로 다시 이동하여 Source의 Branch를 main에서 gh-pages로 변경하고 Save를 누른다.
