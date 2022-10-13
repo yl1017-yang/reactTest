@@ -1,7 +1,8 @@
 /* eslint-disable */  //warning Lint 끄는 기능
 
 import { useState } from 'react';
-import './App.css';
+import './styles/App.css';
+import logo from './images/icon-banner-01.svg';
 
 function App() {
   
@@ -28,7 +29,7 @@ function App() {
     <div className="App">
 
       <header>
-        <h1 className="App-logo">코딩애플 블로그</h1>
+        <h1 className="App-logo">리액트 블로그</h1>
         <nav className="black-nav">
           메뉴1
         </nav>
@@ -41,6 +42,17 @@ function App() {
           스타일문법은 카멜케이스 사용
         </p>
         <p>코딩애플 강좌 : https://codingapple.com/unit/react2-jsx-classname-html/?id=2305</p>
+
+        <h2><a href="http://cafesi.aurorasoft.co.kr/" target="_blank">http://cafesi.aurorasoft.co.kr/</a></h2>
+        <h2><a href="https://yl1017-yang.github.io/reactTest/" target="_blank">https://yl1017-yang.github.io/reactTest/</a></h2>
+        
+        <img src={logo} className='App-logo' alt='React' />
+
+        <img src={'./images/icon-banner-01.svg'} alt="이미지배너" />
+        <img src={`${process.env.PUBLIC_URL}/public/images/icon-banner-01.svg`} className='App-logo' alt='React'/>
+        <div style={{ backgroundImage: 'url(/public/images/icon-banner-01.svg)' }}></div>
+        
+        
       </div>
 
       <button onClick={ () => {
@@ -72,6 +84,8 @@ function App() {
 
 
       <Modal></Modal>
+
+      
 
     </div>
   );
