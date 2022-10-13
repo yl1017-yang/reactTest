@@ -52,3 +52,8 @@ haeder {
   margin: 20px;
   font-size: 20px;
 }
+
+.modal {
+  padding: 50px;
+  background-color: aliceblue;
+}
