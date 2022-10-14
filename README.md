@@ -2,6 +2,28 @@
 cafesi.aurorasoft.co.kr
 https://yl1017-yang.github.io/reactTest/
 
+==================================================================================
+# 폴더구조
+==================================================================================
+참고 : https://github.com/sosohanya/sosohanya-react-admin/tree/003_layout
+https://sosohanya.tistory.com/116
+
+
+/src/assets : styles, images, font 등 리소스 모음
+/src/commons : 컴포넌트가 아닌 순수 자바스크립트 공통 함수들 모음
+/src/components : Header / Lnb / 페이징 등 전반적인 페이지에서 공통으로 쓰는 컴포넌트 모음
+/src/layouts : 감싸는 영역 부분
+/src/pages : Contents 부분에 보여질 컴포넌트 모음, route로 이동하도록 할 예정
+
+==================================================================================
+# 리액트 설치
+npx create-react-app frontend
+npm install -save gh-pages
+
+# Router 설치
+npm i react-router-dom
+
+==================================================================================
 
 # Getting Started with Create React App
 
