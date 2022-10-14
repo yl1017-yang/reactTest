@@ -1,12 +1,7 @@
-import logo from "../assets/images/logo.png";
-
 function Lnb(){
-    return <div className="lnb">
-        <div className="logo">
-            <img src={logo} alt={"sosohanya logo"} />
-        </div>
+    return( 
+    <div className="lnb">
         <div className="menus">
-            <p className="tit">Menu 1</p>
             <ul>
                 <li>
                     <a href={"/#"}>Sub 1</a>
@@ -20,6 +15,7 @@ function Lnb(){
             </ul>
         </div>
     </div>
+    )
 }
 
 export default Lnb;
