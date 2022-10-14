@@ -1,6 +1,9 @@
 // import logo from "../assets/images/logo.png";
 import { Link } from 'react-router-dom';
 
+
+// 리액트 링크 : https://react-router.vlpt.us/1/03.html
+
 function Header(){
   return(
    <div className="top_area">
