@@ -64,3 +64,15 @@ We suggest that you begin by typing:
 4. github --> settings -> options
 
 깃허브 Pages 탭으로 다시 이동하여 Source의 Branch를 main에서 gh-pages로 변경하고 Save를 누른다.
+
+
+
+--------
+참고 내용
+- 레이아웃 : https://sosohanya.tistory.com/116
+- 라우터 이동경로 : https://react-router.vlpt.us/1/03.html
+
+- 라우터 + 부트스트랩 코딩애플
+https://velog.io/@abcd8637/%EC%BD%94%EB%94%A9%EC%95%A0%ED%94%8C-React-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B9%8C%EC%A7%80-part.2-1
+https://codingapple.com/course/react-basic/
+
