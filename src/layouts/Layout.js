@@ -6,9 +6,9 @@ import {Outlet} from "react-router-dom";
 function Layout(){
     return( 
     <div className="wrap">
-        <header className="header-area">
+        <div className="header-area">
             <Header/>
-        </header>
+        </div>
         <div className="container-area">
             <div className="lnb">
                 <Lnb/>

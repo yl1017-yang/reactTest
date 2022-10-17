@@ -1,5 +1,49 @@
-.wrap{ min-width: 1200px;}
+html, body {
+    font-family: 'NotoSans', sans-serif !important;
+}
 
+@font-face {
+    font-family:'NotoSans';
+    font-style:normal;
+    font-weight:300;
+    font-display: swap;
+    src:local('NotoSansKR-DemiLight'),
+    url(../fonts/NotoSansKR-DemiLight.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-DemiLight.woff) format('woff');
+}
+@font-face {
+    font-family:'NotoSans';
+    font-style:normal;
+    font-weight:400;
+    font-display: swap;
+    src:local('NotoSansKR-Regular'),
+    url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Regular.woff) format('woff');
+}
+@font-face {
+    font-family:'NotoSans';
+    font-style:normal;
+    font-weight:500;
+    font-display: swap;
+    src:local('NotoSansKR-Medium'),
+    url(../fonts/NotoSansKR-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Medium.woff) format('woff');
+}
+@font-face {
+    font-family:'NotoSans';
+    font-style:normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('NotoSansKR-Bold'),
+    url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSansKR-Bold.woff) format('woff');
+}
+
+
+
+
+
+/* .wrap{ min-width: 1200px;}
 .container-area{ width: 100%; display: flex;}
 .container-area .lnb{ width: 200px; box-sizing: border-box;}
 .container-area .contents { position: relative; width: 100%; box-sizing: border-box;min-height: 500px; margin: 30px; background: #eee; }
@@ -20,4 +64,4 @@
 .top_area .menus ul { display: flex; justify-content: center;}
 .top_area .menus ul li a{display: block; font-size: 20px; height:45px; line-height: 45px; font-weight: 700; color: rgba(199, 210, 237, 0.8);padding:0 20px;}
 .top_area .menus ul li.on a{color: #fff}
-
+ */
