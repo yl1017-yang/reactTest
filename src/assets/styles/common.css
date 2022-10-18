@@ -65,7 +65,7 @@ html, body {
 
 /* Header 네비바 */
 #top-nav.navbar{padding:20px 0;background-color:#fff;border-bottom:1px solid #ddd;margin-bottom:50px;}
-#top-nav.navbar .navbar-brand{font-size:30px;font-weight:700;}
+#top-nav.navbar .navbar-brand{font-size:32px;font-weight:700;}
 #top-nav.navbar .navbar-nav{font-size:18px;}
 
 .footer{background:#f4f4f4;margin-top:80px;padding:30px;}

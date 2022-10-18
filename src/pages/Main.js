@@ -1,4 +1,4 @@
-import { Container, Row, Col, Form, Button, Table, Pagination } from "react-bootstrap";
+import { Container, Form, Button, Table, Pagination } from "react-bootstrap";
 // import { BsSearch, BsCaretRightFill, BsCheck } from "react-icons/bs";
 
 function Main(){
@@ -24,7 +24,7 @@ function Main(){
       <h3>대리점명</h3>
 
       {/* 테이블 */}
-      <Table responsive>
+      <Table responsive="md">
         <thead>
           <tr>
             <th>No</th>
@@ -103,7 +103,7 @@ function Main(){
         </tbody>
       </Table>
 
-      <Pagination>
+      <Pagination className="justify-content-md-center">
         <Pagination.First />
         <Pagination.Prev />
         <Pagination.Item>{1}</Pagination.Item>

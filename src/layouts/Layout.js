@@ -8,16 +8,18 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Layout(){
     return( 
-    <div>
-        <Header/>
-        <Container>
-            <Row>
-                <Col md={4} lg={2}><Lnb/></Col>
-                <Col md={8} lg={10}><Outlet/></Col>
-            </Row>
-        </Container>
-        <Footer/>
-    </div>
+    <main>
+      <Header/>
+
+      <Container fluid="md">
+        <Row>
+            <Col lg="0" xl="2"><Lnb/></Col>
+            <Col lg="12" xl="10"><Outlet/></Col>
+          </Row>
+      </Container>
+
+      <Footer/>
+    </main>
     )
 }
 
