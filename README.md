@@ -22,12 +22,14 @@ npm install -save gh-pages
 npm install react-router-dom --save
 
 # 부트스트랩 설치
-npm install bootstrap --save
+npm install bootstrap --save \
+https://react-bootstrap.github.io/layout/breakpoints/
 
 # 리액트아이콘 설치
-npm install react-icons --save
-npm install @react-icons/all-files --save
-npm install react-bootstrap-icons --save
+npm install react-icons --save \
+npm install @react-icons/all-files --save \
+npm install react-bootstrap-icons --save \
+https://react-icons.github.io/react-icons/icons?name=bs
 
 ========================================================================
 

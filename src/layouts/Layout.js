@@ -11,11 +11,11 @@ function Layout(){
     <main>
       <Header/>
 
-      <Container fluid="md">
+      <Container fluid="xxl" >
         <Row>
-            <Col lg="0" xl="2"><Lnb/></Col>
-            <Col lg="12" xl="10"><Outlet/></Col>
-          </Row>
+          <Col lg="0" xl="2"><Lnb/></Col>
+          <Col lg="12" xl="10"><Outlet/></Col>
+        </Row>
       </Container>
 
       <Footer/>

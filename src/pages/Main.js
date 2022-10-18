@@ -4,7 +4,7 @@ import { Container, Form, Button, Table, Pagination } from "react-bootstrap";
 function Main(){
   return( 
     <Container>
-      <h2 className="title-01">통합관리</h2>
+      <h2 className="title-h2">통합관리</h2>
       {/* https://react-icons.github.io/react-icons */}
       {/* <BsSearch size="24" color="blue"/>
       <BsCaretRightFill size="24"/>
@@ -21,10 +21,10 @@ function Main(){
           <Button variant="outline-success">Search</Button>
       </Form>
 
-      <h3>대리점명</h3>
+      <h3 className="title-h3">대리점명</h3>
 
       {/* 테이블 */}
-      <Table responsive="md">
+      <Table responsive="md" className="tbl-type1">
         <thead>
           <tr>
             <th>No</th>
