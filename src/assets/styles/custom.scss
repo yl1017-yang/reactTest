@@ -124,10 +124,9 @@ $pagination-color: inherit;
 #root {
 
   /* Header 네비바 */
-  .navbar {
+  .header-util.navbar {
     padding: 20px 0;
     background-color: $gray-200;
-    margin-bottom: 50px;
 
     .navbar-brand {
       font-size: 36px;
@@ -136,9 +135,9 @@ $pagination-color: inherit;
 
     .navbar-nav {
       font-size: 18px;
+      --bs-nav-link-hover-color: #e76f51;
 
       .nav-link {
-        color: $gray-800;
         font-weight: 500;
       }
     }
@@ -146,7 +145,16 @@ $pagination-color: inherit;
     .text-state {
       font-size: 14px;
     }
-    
+  }
+
+  .header-nav.navbar {
+    border-bottom: 1px solid $gray-200;
+    margin-bottom: 50px;
+    padding: 0;
+
+    .nav-link {
+      padding: 15px;
+    }
   }
 
   .footer {

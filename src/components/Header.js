@@ -1,6 +1,9 @@
 // 리액트 링크 : https://react-router.vlpt.us/1/03.html
 // css 수정 : https://think0wise.tistory.com/m/24
 // 아이콘: https://react-icons.github.io/react-icons/icons?name=io5
+// https://velog.io/@sangbin2/NavLink-%EC%82%AC%EC%9A%A9%EB%B2%95
+// https://blog.naver.com/PostView.naver?blogId=azanghs&logNo=222827522522
+// https://samtao.tistory.com/32
 
 import { Navbar, Container, Nav, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -10,24 +13,22 @@ function Header(){
   let navigate = useNavigate();
 
   return(    
+    <>
 
-    <Navbar bg="" variant="">
-      <Container fluid="xxl" >
-        {/* <Row> */}
+      <Navbar bg="dark" variant="dark" className="header-util">
+        <Container fluid="xxl">
           <Col sm="2">
-            {/* <Navbar.Brand href="#home">Cafesi</Navbar.Brand> */}
-            <Navbar.Brand onClick={() => { navigate('/reactTest/') }}>Café si</Navbar.Brand>
+              <Navbar.Brand onClick={() => { navigate('/reactTest/') }}>Café si</Navbar.Brand>
           </Col>
 
           <Col sm="6">
             <Nav className="me-auto">
-              <Nav.Link onClick={() => { navigate('/reactTest/') }}><SlHome size="18"/> 메인</Nav.Link>
-              <Nav.Link onClick={() => { navigate('/reactTest/Page1')}}><SlPeople size="18"/> 관리자화면</Nav.Link>
-              <Nav.Link onClick={() => { navigate('/reactTest/Page2')}}><SlSettings size="18"/> 현황자료</Nav.Link>
-              
-              {/* <Link exact to="/reactTest/">메인</Link> */}
-              {/* <Nav.Link href="#features">서브페이지-1</Nav.Link> */}
-              {/* <Nav.Link href="#pricing">서브페이지-2</Nav.Link> */}
+                <Nav.Link onClick={() => { navigate('/reactTest/') }}><SlHome size="18"/> 메인</Nav.Link>
+                <Nav.Link onClick={() => { navigate('/reactTest/Page1')}}><SlPeople size="18"/> 관리자</Nav.Link>
+                <Nav.Link onClick={() => { navigate('/reactTest/Page2')}}><SlSettings size="18"/> 현황</Nav.Link>
+                <Nav.Link href="/reactTest/#">Home</Nav.Link>
+                <Nav.Link href="/reactTest/#Page1">Features</Nav.Link>
+                <Nav.Link href="/reactTest/#Page2">Pricing</Nav.Link>
             </Nav>
           </Col>
 
@@ -42,13 +43,25 @@ function Header(){
               </Col>
             </Row>
           </Col>
-        {/* </Row> */}
-        
-      </Container>
-    </Navbar>
+        </Container>
+      </Navbar>
+      
+      <Navbar bg="primary" variant="dark" className="header-nav">
+        <Container fluid="xxl">
+          <Nav className="me-auto">
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>매출요인</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>매출상세조회</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>상품관리</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>메뉴관리</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>메뉴권한관리</Nav.Link>
+            <Nav.Link onClick={() => { navigate('/reactTest/') }}>통합관리</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
 
-
-
+    </>
   )
 }
 

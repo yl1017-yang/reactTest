@@ -6,15 +6,23 @@ function Lnb(){
 	<div className="menus">
 		<ul>
       <li>
-          <Link exact to="/reactTest/">메인</Link>
-        </li>
-        <li>
-          <Link exact to="/reactTest/Page1">서브페이지-1</Link>
-        </li>
-        <li>
-          <Link exact to="/reactTest/Page2">서브페이지-2</Link>
-        </li>
-      </ul>
+        <Link exact to="/reactTest/">매출요인</Link> <br />
+        <Link exact to="/reactTest/">매출상세조회</Link>
+      </li>
+      <li>
+      <h2>관리자화면</h2>
+        <Link exact to="/reactTest/Page1">상품관리</Link>
+      </li>
+      <li>        
+        <Link exact to="/reactTest/Page2">메뉴관리</Link>
+      </li>
+      <li>
+        <Link exact to="/reactTest/Page2">메뉴권한관리</Link>
+      </li>
+      <li>
+        <Link exact to="/reactTest/Page2">통합관리</Link>
+      </li>
+    </ul>
 	</div>
 	)
 }
