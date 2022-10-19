@@ -33,7 +33,7 @@ function Header(){
 
           <Col sm="4">
             <Row>
-              <Col sm="9">
+              <Col sm="9" className="text-state">
                 id1234 [ 농부들의 카페장터 ] [ 1911275 ] <br/>
                 [ s ] [ 100.100.123.123 ] 로그인 상태입니다
               </Col>
