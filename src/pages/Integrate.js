@@ -1,19 +1,19 @@
 import { Form, Button, ButtonGroup, Table, Pagination, Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 
-function Page2() {
-  return (
+function Integrate(){
+  return( 
     <>
-      <h2 className="title-h2">매출상세조회</h2>
+      <h2 className="title-h2">통합관리</h2>
 
       <Form className="d-flex">
-        <span>매출상세조회 결제일시</span>
-        <Form.Control
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-primary">Search</Button>
+          <span>매출상세조회 결제일시</span>
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button variant="outline-primary">Search</Button>
       </Form>
 
       <h3 className="title-h3">SC-520 개발팀 대리점 전체</h3>
@@ -25,20 +25,20 @@ function Page2() {
             <th>No</th>
             <th>설치장소-자판기번</th>
             <th>
-              통신
+              통신 
               {['right'].map((placement) => (
-                <OverlayTrigger
-                  key={placement}
-                  placement={placement}
-                  overlay={
-                    <Tooltip id={`tooltip-${placement}`}>
-                      안내메시지
-                    </Tooltip>
-                  }
-                >
-                  <Button variant="">{placement}</Button>
-                </OverlayTrigger>
-              ))}
+              <OverlayTrigger
+                key={placement}
+                placement={placement}
+                overlay={
+                  <Tooltip id={`tooltip-${placement}`}>
+                    안내메시지
+                  </Tooltip>
+                }
+              >
+                <Button variant="">{placement}</Button>
+              </OverlayTrigger>
+            ))}
             </th>
             <th>랙 상태</th>
             <th>총 결제건수</th>
@@ -192,15 +192,15 @@ function Page2() {
           </tr>
         </tbody>
       </Table>
-
+      
       <ButtonGroup aria-label="Basic example" className="text-end">
         <Button variant="outline-secondary">목록</Button>
         <Button variant="secondary" className="ms-2">다운로드</Button>
       </ButtonGroup>
-
+      
 
     </>
   )
 }
 
-export default Page2;
+export default Integrate;

@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Lnb from "../components/Lnb";
+// import Lnb from "../components/Lnb";
 import { Outlet } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 // https://react-bootstrap.github.io/layout/breakpoints/
 
@@ -17,7 +17,10 @@ function Layout(){
           <Col lg="12" xl="10"><Outlet/></Col>
         </Row>
       </Container> */}
-      <Outlet/>
+
+      <Container fluid >
+        <Outlet/>
+      </Container>
 
       <Footer/>
     </main>

@@ -1,8 +1,8 @@
-import { Container, Table, Row, Col } from "react-bootstrap";
+import { Table, Row, Col } from "react-bootstrap";
 
-function Page1(){
-  return( 
-    <Container>
+function Page1() {
+  return (
+    <>
       <h2 className="title-h2">통합관리</h2>
 
       <Row>
@@ -81,7 +81,7 @@ function Page1(){
         </Col>
       </Row>
 
-    </Container>
+    </>
   )
 }
 

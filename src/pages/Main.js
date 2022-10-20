@@ -1,14 +1,14 @@
-import { Container, Form, Button, ButtonGroup, Table, Pagination, Row, Col, Card } from "react-bootstrap";
+import { Button, Table, Pagination, Row, Col, Card } from "react-bootstrap";
 
-function Main(){
-  return( 
-    <Container>
-      
+function Main() {
+  return (
+    <>
+
       <Row>
         <Col><h2 className="title-h2">매출요인</h2></Col>
         <Col className="text-end"><Button variant="outline-primary">매출상세조회</Button></Col>
       </Row>
-      
+
       <Card className="card-con mt-2 mb-4">
         <Card.Body>
           <Card.Title>최근 1년동안 매출 추이</Card.Title>
@@ -44,7 +44,7 @@ function Main(){
         </tbody>
       </Table>
 
-    </Container>
+    </>
   )
 }
 
