@@ -23,7 +23,7 @@ function Main() {
         </Card.Body>
       </Card>
 
-      <Table hover responsive="lg" className="tbl-type1">
+      <Table hover responsive="xl" className="tbl-type1">
         <thead>
           <tr>
             <th>당일</th>
@@ -49,51 +49,7 @@ function Main() {
             <td><span className="txt-exclu-price">450,385원</span></td>
           </tr>
         </tbody>
-      </Table>
-
-
-      <Table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-          </tr>
-        </tbody>
-      </Table>
+      </Table>      
 
     </>
   )
