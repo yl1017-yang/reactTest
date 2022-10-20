@@ -18,7 +18,7 @@ function Layout(){
         </Row>
       </Container> */}
 
-      <Container fluid >
+      <Container fluid="xxl" >
         <Outlet/>
       </Container>
 

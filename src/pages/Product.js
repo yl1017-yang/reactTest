@@ -12,8 +12,8 @@ function Product() {
             <Col>
               <h3 className="title-h3">브랜드</h3>
             </Col>
-            <Col>
-              <ButtonGroup aria-label="Basic example" className="text-end">
+            <Col className="text-end">
+              <ButtonGroup aria-label="Basic example">
                 <Button variant="primary">브랜드등록</Button>
                 <Button type="reset" value="Reset" variant="outline-primary" className="ms-2">새로고침</Button>
               </ButtonGroup>
@@ -103,8 +103,8 @@ function Product() {
             <Col>
               <h3 className="title-h3">상품</h3>
             </Col>
-            <Col>
-              <ButtonGroup aria-label="Basic example" className="text-end">
+            <Col className="text-end">
+              <ButtonGroup aria-label="Basic example">
                 <Button variant="primary">상품등록</Button>
               </ButtonGroup>
             </Col>

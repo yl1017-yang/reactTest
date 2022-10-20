@@ -1,13 +1,20 @@
-import { Button, Table, Pagination, Row, Col, Card } from "react-bootstrap";
+import { Button, Table, Row, Col, Card } from "react-bootstrap";
+import { useNavigate, Link } from "react-router-dom";
+// import Stack from 'react-bootstrap/Stack';
 
 function Main() {
+  // let navigate = useNavigate();
+
   return (
     <>
-
       <Row>
-        <Col><h2 className="title-h2">매출요인</h2></Col>
-        <Col className="text-end"><Button variant="outline-primary">매출상세조회</Button></Col>
+        <Col mg="6"><h2 className="title-h2">매출요인</h2></Col>
+        <Col mg="6" className="text-end"><Link className="btn btn-outline-primary" role="button" to="/reactTest/SalesDetail">매출상세조회</Link></Col>
       </Row>
+      {/* <Stack direction="horizontal" gap={2}>
+        <div><h2 className="title-h2">매출요인</h2></div>
+        <div className="ms-auto"><Button variant="outline-primary" onClick={() => { navigate('/reactTest/SalesDetail')}} >매출상세조회</Button></div>
+      </Stack> */}
 
       <Card className="card-con mt-2 mb-4">
         <Card.Body>
@@ -16,7 +23,7 @@ function Main() {
         </Card.Body>
       </Card>
 
-      <Table responsive="md" className="tbl-type1">
+      <Table hover responsive="lg" className="tbl-type1">
         <thead>
           <tr>
             <th>당일</th>
@@ -40,6 +47,50 @@ function Main() {
             <td><span className="txt-exclu-price">180,300원</span></td>
             <td><span className="txt-exclu-price">300,385원</span></td>
             <td><span className="txt-exclu-price">450,385원</span></td>
+          </tr>
+        </tbody>
+      </Table>
+
+
+      <Table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
           </tr>
         </tbody>
       </Table>
