@@ -19,83 +19,85 @@ function Product() {
               </ButtonGroup>
             </Col>
           </Row>
-
-          <Table responsive="md" className="tbl-type1 mt-3">
-            <thead>
-              <tr>
-                <th>브랜드명</th>
-                <th>상품</th>
-                <th>수정</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>그린마운틴 커피</td>
-                <td>1</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>글로리아진스</td>
-                <td>1</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>던킨도넛</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>라라</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>라바짜</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>래핑맨</td>
-                <td>1</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>마카롱</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>맴버스마크</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>밀키트</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>바리스타프리마</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>스내플</td>
-                <td>1</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>스위스미스</td>
-                <td>1</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-              <tr>
-                <td>스타벅스</td>
-                <td>0</td>
-                <td><Button variant="outline-primary" size="sm">수정</Button></td>
-              </tr>
-            </tbody>
-          </Table>
+          
+          <div className="tbl-type1 table-responsive mt-3">
+            <Table hover>
+              <thead>
+                <tr>
+                  <th>브랜드명</th>
+                  <th>상품</th>
+                  <th>수정</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>그린마운틴 커피</td>
+                  <td>1</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>글로리아진스</td>
+                  <td>1</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>던킨도넛</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>라라</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>라바짜</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>래핑맨</td>
+                  <td>1</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>마카롱</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>맴버스마크</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>밀키트</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>바리스타프리마</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>스내플</td>
+                  <td>1</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>스위스미스</td>
+                  <td>1</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+                <tr>
+                  <td>스타벅스</td>
+                  <td>0</td>
+                  <td><Button variant="outline-primary" size="sm">수정</Button></td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
         </Col>
 
         <Col xl="7">
@@ -110,61 +112,63 @@ function Product() {
             </Col>
           </Row>
 
-          <Table responsive="md" className="tbl-type1 mt-3">
-            <thead>
-              <tr>
-                <th>브랜드명</th>
-                <th>상품</th>
-                <th>투출타입</th>
-                <th>단위</th>
-                <th>비고</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>그린마운틴 커피</td>
-                <td>1</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>글로리아진스</td>
-                <td>1</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>던킨도넛</td>
-                <td>0</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>라라</td>
-                <td>0</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>라바짜</td>
-                <td>0</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>래핑맨</td>
-                <td>1</td>
-                <td>투출</td>
-                <td>낱개</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </Table>
+          <div className="tbl-type1 table-responsive mt-3">
+            <Table hover>
+              <thead>
+                <tr>
+                  <th>브랜드명</th>
+                  <th>상품</th>
+                  <th>투출타입</th>
+                  <th>단위</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>그린마운틴 커피</td>
+                  <td>1</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>글로리아진스</td>
+                  <td>1</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>던킨도넛</td>
+                  <td>0</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>라라</td>
+                  <td>0</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>라바짜</td>
+                  <td>0</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>래핑맨</td>
+                  <td>1</td>
+                  <td>투출</td>
+                  <td>낱개</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
         </Col>
       </Row>
 
