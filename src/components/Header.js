@@ -55,9 +55,9 @@ function Header() {
               <Nav.Link onClick={() => { navigate('/reactTest/') }}><SlHome size="18" /> 메인</Nav.Link>
               <Nav.Link onClick={() => { navigate('/reactTest/Product') }}><SlPeople size="18" /> 관리자</Nav.Link>
               <Nav.Link onClick={() => { navigate('/reactTest/Integrate') }}><SlSettings size="18" /> 현황</Nav.Link>
-              <Nav.Link href="/reactTest/#">Home</Nav.Link>
+              {/* <Nav.Link href="/reactTest/#">Home</Nav.Link>
               <Nav.Link href="/reactTest/#Page1">Features</Nav.Link>
-              <Nav.Link href="/reactTest/#Page2">Pricing</Nav.Link>
+              <Nav.Link href="/reactTest/#Page2">Pricing</Nav.Link> */}
             </Nav>
 
             <div className="text-state">
@@ -79,8 +79,8 @@ function Header() {
             <Nav.Link onClick={() => { navigate('/reactTest/Menu') }}>메뉴관리</Nav.Link>
             <Nav.Link onClick={() => { navigate('/reactTest/MenuPermission') }}>메뉴권한관리</Nav.Link>
             <Nav.Link onClick={() => { navigate('/reactTest/Integrate') }}>통합관리</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            {/* <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>
