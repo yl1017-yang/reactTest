@@ -192,7 +192,14 @@ $pagination-color: inherit;
 
   /* 테이블 */
   .tbl-type1 {
-    border-top: 1px solid #444;
+    border-top: 2px solid #444;
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      // min-width: 768px;
+      min-width: 992px;
+    }
 
     thead, tbody, tfoot, tr, td, th {
       vertical-align: middle;
@@ -204,9 +211,6 @@ $pagination-color: inherit;
       font-size: $font-size-sm;
       background-color: #f9f9f9;
       padding: 0.8rem 0;
-    }
-    tbody td {
-      
     }
   }
 

@@ -23,33 +23,35 @@ function Main() {
         </Card.Body>
       </Card>
 
-      <Table hover responsive="xl" className="tbl-type1">
-        <thead>
-          <tr>
-            <th>당일</th>
-            <th>1월판매 (1~말일)</th>
-            <th>2월판매 (1~말일)</th>
-            <th>3월판매 (1~말일)</th>
-            <th>2월일평균 (1~말일)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span className="txt-exclu-case">17건</span></td>
-            <td><span className="txt-exclu-case">7건</span></td>
-            <td><span className="txt-exclu-case">1건</span></td>
-            <td><span className="txt-exclu-case">25건</span></td>
-            <td><span className="txt-exclu-case">37건</span></td>
-          </tr>
-          <tr>
-            <td><span className="txt-exclu-price">988,385원</span></td>
-            <td><span className="txt-exclu-price">200,000원</span></td>
-            <td><span className="txt-exclu-price">180,300원</span></td>
-            <td><span className="txt-exclu-price">300,385원</span></td>
-            <td><span className="txt-exclu-price">450,385원</span></td>
-          </tr>
-        </tbody>
-      </Table>      
+      <div className="tbl-type1 table-responsive">
+        <Table hover>
+          <thead>
+            <tr>
+              <th>당일</th>
+              <th>1월판매 (1~말일)</th>
+              <th>2월판매 (1~말일)</th>
+              <th>3월판매 (1~말일)</th>
+              <th>2월일평균 (1~말일)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span className="txt-exclu-case">17건</span></td>
+              <td><span className="txt-exclu-case">7건</span></td>
+              <td><span className="txt-exclu-case">1건</span></td>
+              <td><span className="txt-exclu-case">25건</span></td>
+              <td><span className="txt-exclu-case">37건</span></td>
+            </tr>
+            <tr>
+              <td><span className="txt-exclu-price">988,385원</span></td>
+              <td><span className="txt-exclu-price">200,000원</span></td>
+              <td><span className="txt-exclu-price">180,300원</span></td>
+              <td><span className="txt-exclu-price">300,385원</span></td>
+              <td><span className="txt-exclu-price">450,385원</span></td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
 
     </>
   )

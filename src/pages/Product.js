@@ -6,10 +6,10 @@ function Product() {
       <h2 className="title-h2">브랜드/상품관리</h2>
 
       <Row className="mt-2">
-        <Col xl="4">
+        <Col xl="5">
 
           <Row className="mt-4">
-            <Col>
+            <Col className="me-auto">
               <h3 className="title-h3">브랜드</h3>
             </Col>
             <Col className="text-end">
@@ -98,7 +98,7 @@ function Product() {
           </Table>
         </Col>
 
-        <Col xl="8">
+        <Col xl="7">
           <Row className="mt-4">
             <Col>
               <h3 className="title-h3">상품</h3>
