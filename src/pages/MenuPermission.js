@@ -1,20 +1,23 @@
-import { Form, Button, ButtonGroup, Table, Row, Col } from "react-bootstrap";
+import { Form, Button, Table, Row, Col, Card } from "react-bootstrap";
 
 function MenuPermission() {
   return (
     <>
       <h2 className="title-h2">메뉴권한관리</h2>
 
-      <Form className="d-flex">
-        <span>상호검색</span>
-        <Form.Control
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-primary">Search</Button>
-      </Form>
+      <Card className="card-con-search mt-2 mb-4">
+        <Card.Body>
+          <Card.Text>
+            <Form className="row row-cols-lg-auto align-items-center">
+              <Form.Group className="row" controlId="formDate1">
+                <Form.Label className="col" column sm="4">상호 검색</Form.Label>
+                <Form.Control className="col" sm="8" type="input" placeholder="상호 검색 입력" />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="m-2">검색</Button>
+            </Form>
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
       <Row className="mt-5">
         <Col>

@@ -1,33 +1,34 @@
-import { Table, Row, Col, Form, Button, OverlayTrigger, Tooltip, Image } from "react-bootstrap";
-import { IoInformationCircleSharp } from "react-icons/sl";
+import { Table, Row, Col, Form, Button, OverlayTrigger, Tooltip, Card } from "react-bootstrap";
+// import { IoInformationCircleSharp } from "react-icons/sl";
 
 function SalesDetail() {
   return (
     <>
       <h2 className="title-h2">매출상세조회</h2>
 
-      <Form className="d-flex row-cols-lg-auto align-items-center">
-        <Form.Label className="m-2">매출상세조회 결제일시</Form.Label>
-        {/* <Form.Group as={Col} controlId="formDate">
-          <Form.Control className="col-sm-3" placeholder="2022.00.00" /> ~
-          <Form.Control className="col-sm-3" placeholder="2022.00.00" />
-        </Form.Group> */}
+      <Card className="card-con-search mt-2 mb-4">
+        <Card.Body>
+          <Card.Title>매출상세조회 결제일시</Card.Title>
+          <Card.Text>
+            <Form className="d-flex row-cols-lg-auto align-items-center">
+              <Form.Group controlId="formDate1">
+                <Form.Label className="visually-hidden">조회시작</Form.Label>
+                <Form.Control type="input" placeholder="2022.00.00" />
+              </Form.Group>
 
-        <Form.Group as={Col} controlId="formDate1">
-          <Form.Label className="visually-hidden">조회시작</Form.Label>
-          <Form.Control type="input" placeholder="2022.00.00" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formDate2" className="m-2">
-          <Form.Label className="visually-hidden">조회끝</Form.Label>
-          <Form.Control type="input" placeholder="2022.00.00" />
-        </Form.Group>
-        
-        <Button variant="outline-primary" className="m-2">오늘</Button>
-        <Button variant="outline-primary">이번달</Button>
-        <Button variant="outline-primary"className="m-2">지난달</Button>
-        <Button variant="primary" type="submit">조회</Button>        
-      </Form>
+              <Form.Group controlId="formDate2" className="m-2">
+                <Form.Label className="visually-hidden">조회끝</Form.Label>
+                <Form.Control type="input" placeholder="2022.00.00" />
+              </Form.Group>
+              
+              <Button variant="outline-primary" className="m-2">오늘</Button>
+              <Button variant="outline-primary">이번달</Button>
+              <Button variant="outline-primary"className="m-2">지난달</Button>
+              <Button variant="primary" type="submit">조회</Button>
+            </Form>
+          </Card.Text>
+        </Card.Body>
+      </Card>
 
       <Row className="mt-5">
         <Col xl="3">

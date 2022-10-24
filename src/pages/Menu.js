@@ -1,20 +1,82 @@
-import { Form, Button, Table } from "react-bootstrap";
+import React, { useState } from 'react';
+import { Form, Button, Table, Card, Modal } from "react-bootstrap";
 
 function Menu() {
+  const [menuShow, setMenuShow] = useState(false);
+
+  const handleMClose = () => setMenuShow(false);
+  const handleMShow = () => setMenuShow(true);
+
   return (
     <>
+      {/* 메뉴추가-모달 */}
+      <Modal aria-labelledby="contained-modal-title-vcenter" centered show={menuShow} onHide={handleMClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>메뉴 추가</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="ModalForm.MenuGroup">
+              <Form.Label>메뉴그룹</Form.Label>
+              <Form.Control type="input" placeholder="메뉴그룹 입력" autoFocus />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="ModalForm.MenuName">
+              <Form.Label>메뉴명</Form.Label>
+              <Form.Control type="input" placeholder="메뉴명 입력" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="ModalForm.MenuPath">
+              <Form.Label>메뉴경로</Form.Label>
+              <Form.Control type="input" placeholder="메뉴경로 입력" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="ModalForm.Unit">
+              <Form.Label>구분</Form.Label>
+              <Form.Select aria-label="Default select example">
+                {/* <option>구분 선택</option> */}
+                <option value="1">메뉴</option>
+              </Form.Select>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="ModalForm.Common">
+              <Form.Label>공통메뉴여부</Form.Label>
+              <Form.Select aria-label="Default select example">
+                {/* <option>구분 선택</option> */}
+                <option value="1">Y</option>
+                <option value="2">N</option>
+              </Form.Select>
+              <Form.Text className="text-muted">
+                ※ Y일 경우 권한에 관계없이 노출됨
+              </Form.Text>
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleMClose}>
+            닫기
+          </Button>
+          <Button variant="primary" onClick={handleMClose}>
+            등록하기
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+
       <h2 className="title-h2">메뉴관리</h2>
 
-      <Form className="d-flex">
-        <span>매출상세조회 결제일시</span>
-        <Form.Control
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-primary">Search</Button>
-      </Form>
+      <Card className="card-con-search mt-2 mb-4">
+        <Card.Body>
+          <Card.Text className="row align-items-center">
+            <Form className="row row-cols-lg-auto align-items-center col-auto me-auto">
+              <Form.Group className="row" controlId="formDate1">
+                <Form.Label className="col" column sm="4">검색어</Form.Label>
+                <Form.Control className="col" sm="8" type="input" placeholder="검색어 입력" />
+              </Form.Group>
+              <Button variant="primary" type="submit" className="m-2">검색</Button>
+              <Button variant="outline-primary">엑셀다운</Button>
+            </Form>
+            
+            <Button variant="primary" type="submit" className="col-auto m-2" onClick={handleMShow}>메뉴추가</Button>
+          </Card.Text>
+        </Card.Body>
+      </Card>
       
       <div className="tbl-type1 table-responsive">
         <Table hover>

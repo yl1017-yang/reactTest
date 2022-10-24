@@ -8,8 +8,8 @@ function Main() {
   return (
     <>
       <Row>
-        <Col mg="6"><h2 className="title-h2">매출요인</h2></Col>
-        <Col mg="6" className="text-end"><Link className="btn btn-outline-primary" role="button" to="/reactTest/SalesDetail">매출상세조회</Link></Col>
+        <Col><h2 className="title-h2">매출요인</h2></Col>
+        <Col className="col-auto"><Link className="btn btn-outline-primary" role="button" to="/reactTest/SalesDetail">매출상세조회</Link></Col>
       </Row>
       {/* <Stack direction="horizontal" gap={2}>
         <div><h2 className="title-h2">매출요인</h2></div>
